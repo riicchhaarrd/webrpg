@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>RPG</title>
+<style>
+html,body
+{
+margin:0px;
+background:rgb(50,120,180);
+font-family:Arial;
+}
+
+canvas
+{
+float:left;
+}
+
+.ui
+{
+background:rgb(50,120,180);
+//border:2px solid rgb(50,100,160);
+border:0px;
+border-bottom:0px;
+border-right:0px;
+float:right;
+width:19.4%;
+height:80%;
+
+font-size:50px;
+color:rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.cnt
+{
+position:relative;
+width:100%;
+}
+
+.chat
+{
+font-size:50px;
+color:rgba(0,0,0,0.1);
+text-align:center;
+border:0px;
+//border-top:2px solid rgb(50,100,160);
+background:rgb(50,120,180);
+width:100%;
+height:20%;
+clear:both;
+position:relative;
+}
+
+.chat .controls
+{
+position:absolute;
+left:0px;
+width:80%;
+bottom:0px;
+}
+
+.chat .cinput
+{
+float:right;
+}
+
+input
+{
+border:0px;
+border-bottom:1px solid #ccc;
+}
+
+input[type="button"]
+{
+background:orange;
+border:1px solid orange;
+}
+</style>
+</head>
+<body>
+<div class="cnt">
+<canvas></canvas>
+<div class="ui">
+PLACEHOLDER</div>
+<div id="debug"></div>
+<div class="chat">
+PLACEHOLDER
+<!--
+<div class="controls">
+<div class="cinput">
+<input type="text" placeholder="How's the weather?" style="width:500px;"><input type="button" value="Send">
+</div>
+</div>
+-->
+</div>
+</div>
+<!--<canvas height='480' width='640' id='canvas'></canvas>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+//var width = window.innerWidth;
+//var height = window.innerHeight;
+var width = window.innerWidth * 0.8;
+var height = window.innerHeight * 0.8;
+</script>
+<script src="client.js"></script>
+</body>
+</html>
